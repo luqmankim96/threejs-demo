@@ -5,6 +5,8 @@
 // - Meshes (objects in the 3D world)
 // - Lights
 
+console.log(process.env.API_KEY);
+
 const THREE = require("three");
 
 function createRenderer() {
@@ -130,7 +132,7 @@ function animate() {
           c.rotation.y -= 0.01;
           c.rotation.z -= 0.01;
      });
-     
+
      renderer.render(scene, camera);
      requestAnimationFrame(animate); // Can you call animate as soon as you can
 }
